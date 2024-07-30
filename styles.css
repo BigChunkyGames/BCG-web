@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffff00;
+    margin: 0;
+    padding: 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    background-color: #ffff00;
+    padding: 20px;
+    border-radius: 0 0 50px 50px;
+}
+h1 {
+    color: #1a1a1a;
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+nav a {
+    color: #1a1a1a;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+#content {
+    background-color: #333;
+    border-radius: 30px;
+    padding: 30px;
+    margin-top: 30px;
+}
+.fluffy-shape {
+    background-color: #ffff00;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.2;
+}
+.fluffy-shape:nth-child(1) {
+    top: 10%;
+    left: 5%;
+}
+.fluffy-shape:nth-child(2) {
+    bottom: 15%;
+    right: 10%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.carousel-container {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.carousel-controls {
+    margin-bottom: 10px;
+}
+
+.carousel-container img {
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.carousel-container button {
+    background-color: #ffff00;
+    color: #1a1a1a;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.carousel-container button:hover {
+    background-color: #e6e600;
+}
+
+.download-link {
+    display: inline-block;
+    background-color: #ffff00;
+    color: #1a1a1a;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.download-link:hover {
+    background-color: #e6e600;
+}
+
+.email-button {
+    display: inline-block;
+    background-color: #ffff00;
+    color: #1a1a1a;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.email-button:hover {
+    background-color: #e6e600;
+}
+
+.cloud-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0.5) 60%, rgba(0, 0, 0, 0.2) 80%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.cloud {
+	position: absolute;
+	width: 100px;
+	height: 75px;
+	background-color: #444;
+	border-radius: 50%;
+	box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.5), inset 5px 5px 10px rgba(0, 0, 0, 0.5);
+	z-index: 999;
+	transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute;
+	background: inherit;
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+	box-shadow: inherit;
+}
+.cloud:before {
+	top: -25px;
+	left: 25px;
+	width: 75px;
+	height: 50px;
+	border-radius: 35px 35px 20px 20px;
+}
+.cloud:after {
+	top: 15px;
+	left: -25px;
+	width: 75px;
+	height: 50px;
+	border-radius: 35px 35px 20px 20px;
+}
+.cloud.flung {
+	pointer-events: none;
+}
