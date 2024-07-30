@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #1a1a1a;
-    color: #ffff00;
+    color: #ffde44;
     margin: 0;
     padding: 0;
 }
@@ -12,12 +12,13 @@ html {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
 }
 header {
-    background-color: #ffff00;
-    padding: 20px;
-    border-radius: 0 0 50px 50px;
+	background-color: #ffde44;
+	padding: 20px;
+	border-radius: 0 0 50px 50px;
+	z-index: 101; /* Increased z-index */
+	position: relative; /* Ensure it has a positioning context */
 }
 h1 {
     color: #1a1a1a;
@@ -26,9 +27,11 @@ h1 {
     margin: 0;
 }
 nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	z-index: 102; /* Increased z-index */
+	position: relative; /* Ensure it has a positioning context */
 }
 nav a {
     color: #1a1a1a;
@@ -44,12 +47,14 @@ nav a {
     margin-top: 30px;
 }
 .fluffy-shape {
-    background-color: #ffff00;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    opacity: 0.2;
+    background-color: #ffde44;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	opacity: 0.2;
+	z-index: -1; 
+    pointer-events: none;
 }
 .fluffy-shape:nth-child(1) {
     top: 10%;
@@ -58,6 +63,18 @@ nav a {
 .fluffy-shape:nth-child(2) {
     bottom: 15%;
     right: 10%;
+}
+.fluffy-shape:nth-child(3) {
+    top: 33%;
+    left: 12%;
+}
+.fluffy-shape:nth-child(4) {
+    bottom: 42%;
+    right: 4%;
+}
+.fluffy-shape:nth-child(5) {
+    bottom: 12%;
+    right: 80%;
 }
 img {
     max-width: 100%;
@@ -83,7 +100,7 @@ img {
 }
 
 .carousel-container button {
-    background-color: #ffff00;
+    background-color: #ffde44;
     color: #1a1a1a;
     border: none;
     padding: 10px 20px;
@@ -97,24 +114,9 @@ img {
     background-color: #e6e600;
 }
 
-.download-link {
+.button {
     display: inline-block;
-    background-color: #ffff00;
-    color: #1a1a1a;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.download-link:hover {
-    background-color: #e6e600;
-}
-
-.email-button {
-    display: inline-block;
-    background-color: #ffff00;
+    background-color: #ffde44;
     color: #1a1a1a;
     padding: 10px 20px;
     text-decoration: none;
@@ -124,7 +126,7 @@ img {
     transition: background-color 0.3s ease;
 }
 
-.email-button:hover {
+.button:hover {
     background-color: #e6e600;
 }
 
@@ -177,4 +179,47 @@ img {
 }
 .cloud.flung {
 	pointer-events: none;
+}
+
+.main-logo {
+	display: block;
+	margin: 0 auto;
+	max-width: 40%;
+	height: auto;
+}
+
+@keyframes rainbow {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+}
+
+.rainbow {
+	background: linear-gradient(270deg, #ff0000, #ffa500, #ffff00, #008000, #0000ff, #4b0082, #ee82ee);
+	background-size: 1400% 1400%;
+	animation: rainbow 10s ease infinite;
+}
+
+
+#sub-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: #ffde44;
+    border-radius: 0 0 30px 30px;
+    padding: 10px 0;
+    z-index: 101;
+    position: relative;
+}
+
+#sub-nav a {
+    color: #1a1a1a;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.hidden {
+    display: none;
 }

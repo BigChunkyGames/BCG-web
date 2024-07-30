@@ -1,4 +1,3 @@
-logo
-favicon
 adventure dodge
 stars
+music 

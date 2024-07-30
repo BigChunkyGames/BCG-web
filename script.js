@@ -2,12 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
 	const content = document.getElementById('content');
 	const navLinks = document.querySelectorAll('.nav-link');
 	const cloudsContainer = document.getElementById('clouds-container');
+	const subNav = document.getElementById('sub-nav');
+	const subNavLinks = document.querySelectorAll('.sub-nav-link');
 
 	const pages = {
 		home: `
 			<h2>Welcome to Big Chunky Games</h2>
 			<p>We create fun and engaging indie games. Check out our latest releases!</p>
-			<a href="https://bigchunkygames.itch.io" target="_blank" class="download-link">See all our games on itch.io</a>
+			<a href="https://bigchunkygames.itch.io" target="_blank" class="button">See all our games on itch.io</a>
 		`,
 		'black-perpetuum': `
 			<h2>Black Perpetuum</h2>
@@ -17,18 +19,46 @@ document.addEventListener('DOMContentLoaded', () => {
 			</br></br>
 			Talk to NPCs, become a ball, collect stars, and more.
 			</br></br>
-			<a href="https://bigchunkygames.itch.io/black-perpetuum" target="_blank" class="download-link">Download Black Perpetuum on itch.io</a>
+			<a href="https://bigchunkygames.itch.io/black-perpetuum" target="_blank" class="button">Download Black Perpetuum on itch.io</a>
 			</br></br>
 			<h3>More Images</h3>
 			<div id="imageCarousel"></div>
 			</br></br>
 			<h3>[Devnote]</h3>
-			</br></br>
 			This game was how I spent 2023. But after a year of development I realized something. This game is going to take 5 years to complete.
 			</br></br>
 			So I decided to move on.
 			</br></br>
 			There is no ending, but if you collect all the stars I will personally congratulate you.</p>
+		`,
+		'dot-wars': `
+			<h2>Dot Wars</h2>
+			<p>Details about Dot Wars.</p>
+		`,
+		'advance-quest': `
+			<h2>Advance Quest</h2>
+			<p>What if Advance Wars was a real time strategy game? 
+			</br></br>
+Drive your little jeep around and control units to capture structures and lead the charge to victory in this quick paced RTS campaign. There's even a little bit of story!
+</br></br>
+<a href="https://bigchunkygames.itch.io/advance-quest" target="_blank" class="button">Download now on itch.io</a>
+</br></br>
+<img src="aq images/aw1.png">
+<img src="aq images/aw2.png">
+<img src="aq images/aw3.png">
+</br></br>
+Inspired by: Thronefall, SC2, advance wars, bloons TD, vampire survivors, age of war, star wars battlefront 2, tooth and tail, pikmin, starcraft
+</br></br>
+<h3>[Status: discontinued]</h3>
+I can only work 1 project at a time sorry D:</p>
+		`,
+		'cannon-miner': `
+			<h2>Cannon Miner</h2>
+			<p>Details about Cannon Miner.</p>
+		`,
+		'ridiculous-fish': `
+			<h2>Ridiculous Fish</h2>
+			<p>Details about Ridiculous Fish.</p>
 		`,
 		about: `
 			<h2>About Big Chunky Games</h2>
@@ -37,16 +67,35 @@ document.addEventListener('DOMContentLoaded', () => {
 		contact: `
 			<h2>Contact Us</h2>
 			<p>Get in touch with Big Chunky Games</p> 
-			<a href="mailto:jacksonbbush@gmail.com" class="email-button">Email Us</a>
+			<a href="mailto:jacksonbbush@gmail.com" class="button">Email Us</a>
+		`,
+		secrets: `
+			<h2>Secrets</h2>
+			<button id="rainbowModeButton" class="button">Rainbow Mode</button>
 		`
 	};
-
+	
 	function loadPage(pageId) {
 		content.innerHTML = pages[pageId] || 'Page not found';
-		if (pageId === 'black-perpetuum') {
-			createImageCarousel();
+		if (['black-perpetuum', 'dot-wars', 'advance-quest', 'cannon-miner', 'ridiculous-fish'].includes(pageId)) {
+			subNav.classList.remove('hidden');
+			if (pageId === 'black-perpetuum') {
+				createImageCarousel();
+			}
+		} else {
+			subNav.classList.add('hidden');
+		}
+		if (pageId === 'secrets') {
+			const rainbowModeButton = document.getElementById('rainbowModeButton');
+			rainbowModeButton.addEventListener('click', () => {
+				const elements = document.querySelectorAll('div, body, header');
+				elements.forEach(element => {
+					element.classList.toggle('rainbow');
+				});
+			});
 		}
 	}
+	
 
 	function createImageCarousel() {
 		const carouselContainer = document.getElementById('imageCarousel');
@@ -89,6 +138,14 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	navLinks.forEach(link => {
+		link.addEventListener('click', (e) => {
+			e.preventDefault();
+			const pageId = e.target.getAttribute('href').substr(1);
+			loadPage(pageId);
+		});
+	});
+
+	subNavLinks.forEach(link => {
 		link.addEventListener('click', (e) => {
 			e.preventDefault();
 			const pageId = e.target.getAttribute('href').substr(1);
