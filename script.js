@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		`,
 		contact: `
 			<h2>Contact Us</h2>
-			<p>Get in touch with Big Chunky Games:</p> 
+			<p>Get in touch with Big Chunky Games</p> 
 			<a href="mailto:jacksonbbush@gmail.com" class="email-button">Email Us</a>
 		`
 	};
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		setTimeout(() => {
 			imageElement.src = newSrc;
 			imageElement.style.opacity = 1;
-		}, 500); // Duration of the fade transition
+		}, 100); // Duration of the fade transition
 	}
 
 	navLinks.forEach(link => {
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Helper function to generate random sizes
 	function getRandomSize() {
-		const size = Math.floor(Math.random() * 50) + 50; // Sizes between 50 and 100 pixels
+		const size = Math.floor(Math.random() * 150) + 50; // Sizes between 50 and 100 pixels
 		return `${size}px`;
 	}
 

@@ -1,0 +1,4 @@
+logo
+favicon
+adventure dodge
+stars
