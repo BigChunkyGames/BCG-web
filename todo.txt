@@ -1,4 +1,2 @@
-adventure dodge
 stars
 music 
-check if code works while hosted

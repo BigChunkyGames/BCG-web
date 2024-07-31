@@ -153,6 +153,8 @@ img {
 	box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.5), inset 5px 5px 10px rgba(0, 0, 0, 0.5);
 	z-index: 999;
 	transition: transform 0.5s ease, opacity 0.5s ease;
+    pointer-events: auto;
+    touch-action: none;
 }
 
 .cloud:before, .cloud:after {
@@ -193,8 +195,6 @@ img {
     pointer-events: none;
 }
 
-
-
 .main-logo {
 	display: block;
 	margin: 0 auto;
@@ -217,11 +217,10 @@ img {
 
 #sub-nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 10px;
     background-color: #ffde44;
     border-radius: 0 0 30px 30px;
-    padding: 10px 0;
     z-index: 101;
     position: relative;
 }
@@ -229,9 +228,17 @@ img {
 #sub-nav a {
     color: #1a1a1a;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 10px 10px;
     font-weight: bold;
     font-size: 1em;
+}
+
+@media (max-width: 600px) {
+	#sub-nav a {
+		flex: 1 1 100%; /* Each link will take up full width */
+		text-align: center;
+		padding: 15px 0; /* Adjust padding for better touch targets */
+	}
 }
 
 .hidden {
@@ -252,4 +259,11 @@ p {
 
 .code-container {
     text-align: left;
+}
+
+.divider {
+	width: 80%;
+	margin: 20px auto; /* Centers the divider horizontally and adds space above and below */
+	border: none; /* Removes default border */
+	border-top: 2px solid black; /* Adds a black line */
 }

@@ -82,6 +82,7 @@ I can only work 1 project at a time sorry D:</p>
 			<img src="cm images/cm1.png">
 			<img src="cm images/cm2.png">
 			</br></br>
+			<h3>[Status: Complete (rudimentary) ]
 			<p>We're particularly proud of the procedural generation code on this one. It is still the most advanced code we have ever written from scratch! I mean look at this:</p>
 			<div id="code-container" class="code-container">
             	<pre id="code-content"></pre>
@@ -96,7 +97,7 @@ I can only work 1 project at a time sorry D:</p>
 			<img src="rf images/rf2.png">
 			<img src="rf images/rf3.png">
 			<p>Overcome with nostalgia for Insane Aquarium, we became determined to remake the game with modern graphics and more lasers. We started this project in August 2019 working primarily during college classes instead of paying attention.</p>
-			<h3>[Status: Complete]</h3>
+			<h3>[Status: Complete (rudimentary)]</h3>
 		`,
 		about: `
 			<h2>About Big Chunky Games</h2>
@@ -259,4 +260,28 @@ I can only work 1 project at a time sorry D:</p>
 			}
 		});
 	});
+});
+
+const cloud = document.getElementById('cloud');
+let isDragging = false;
+let startX, startY;
+
+cloud.addEventListener('touchstart', (e) => {
+	isDragging = true;
+	const touch = e.touches[0];
+	startX = touch.clientX - cloud.offsetLeft;
+	startY = touch.clientY - cloud.offsetTop;
+});
+
+cloud.addEventListener('touchmove', (e) => {
+	if (!isDragging) return;
+	e.preventDefault(); // Prevent default behavior like scrolling
+	const touch = e.touches[0];
+	cloud.style.left = `${touch.clientX - startX}px`;
+	cloud.style.top = `${touch.clientY - startY}px`;
+});
+
+cloud.addEventListener('touchend', () => {
+	isDragging = false;
+	// Add fling effect or inertia here if desired
 });
