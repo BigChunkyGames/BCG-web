@@ -45,6 +45,7 @@ nav a {
     border-radius: 30px;
     padding: 30px;
     margin-top: 30px;
+    text-align: center;
 }
 .fluffy-shape {
     background-color: #ffde44;
@@ -115,15 +116,15 @@ img {
 }
 
 .button {
-    display: inline-block;
-    background-color: #ffde44;
-    color: #1a1a1a;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
+	display: inline-block;
+	background-color: #ffde44;
+	color: #1a1a1a;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 5px;
+	margin-top: 10px;
+	transition: background-color 0.3s ease;
 }
 
 .button:hover {
@@ -222,4 +223,20 @@ img {
 
 .hidden {
     display: none;
+}
+
+.link {
+  color:white
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.code-container {
+    text-align: left;
 }

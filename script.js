@@ -11,6 +11,20 @@ document.addEventListener('DOMContentLoaded', () => {
 			<p>We create fun and engaging indie games. Check out our latest releases!</p>
 			<a href="https://bigchunkygames.itch.io" target="_blank" class="button">See all our games on itch.io</a>
 		`,
+		'adventure-dodge': `
+			<h2>Adventure Dodge</h2>
+			<p>Our first fully finished gaming experience.</p>
+			
+			<p>Drive your unstoppable green cube through the perils of life in this colorfully musical level-based runner.</p>
+			<a href="https://porchlight.itch.io/adventure-dodge" target="_blank" class="button">Download on itch.io</a>
+			</br></br>
+			<h3>Watch the trailer</h3>
+			<iframe width="420" height="315"
+			src="https://youtube.com/embed/rv0CerFiCwY">
+			</iframe>
+			</br></br>
+			<h3>[Status: Complete]</h3>
+		`,
 		'black-perpetuum': `
 			<h2>Black Perpetuum</h2>
 			<p>A first-person puzzle game.</p>
@@ -21,19 +35,26 @@ document.addEventListener('DOMContentLoaded', () => {
 			</br></br>
 			<a href="https://bigchunkygames.itch.io/black-perpetuum" target="_blank" class="button">Download Black Perpetuum on itch.io</a>
 			</br></br>
-			<h3>More Images</h3>
 			<div id="imageCarousel"></div>
 			</br></br>
-			<h3>[Devnote]</h3>
-			This game was how I spent 2023. But after a year of development I realized something. This game is going to take 5 years to complete.
+			<h3>[Status: Discontinued]</h3>
+			This game was how we spent 2023. But after a year of development we realized something. This game is going to take 5 years to complete.
 			</br></br>
-			So I decided to move on.
+			So we decided to move on.
 			</br></br>
-			There is no ending, but if you collect all the stars I will personally congratulate you.</p>
+			There is no ending, but if you collect all the stars we will personally congratulate you.</p>
 		`,
 		'dot-wars': `
 			<h2>Dot Wars</h2>
-			<p>Details about Dot Wars.</p>
+			<p>It's a physics simulation competition youtube channel! Kind of like multiply and release videos but with more features!</p>
+			<a href="https://www.youtube.com/@Dot_Wars/videos" target="_blank" class="button">Check out the youtube channel!</a>
+			</br></br>
+
+			<iframe width="420" height="315"
+src="https://www.youtube.com/embed/Suc-KLHwXbc?autoplay=1&mute=1">
+</iframe>
+</br></br>
+<h3>[Status: On Hold]</h3>
 		`,
 		'advance-quest': `
 			<h2>Advance Quest</h2>
@@ -49,24 +70,45 @@ Drive your little jeep around and control units to capture structures and lead t
 </br></br>
 Inspired by: Thronefall, SC2, advance wars, bloons TD, vampire survivors, age of war, star wars battlefront 2, tooth and tail, pikmin, starcraft
 </br></br>
-<h3>[Status: discontinued]</h3>
+<h3>[Status: Discontinued]</h3>
 I can only work 1 project at a time sorry D:</p>
 		`,
 		'cannon-miner': `
 			<h2>Cannon Miner</h2>
-			<p>Details about Cannon Miner.</p>
+			<p>Fire a cannon ball, watch it soar through the sky, then dig deep into the ground to and collect valuable ores!
+			</p>
+			<a href="https://bigchunkygames.itch.io/cannon-miner" target="_blank" class="button">Play it on itch.io</a>
+			</br>
+			<img src="cm images/cm1.png">
+			<img src="cm images/cm2.png">
+			</br></br>
+			<p>We're particularly proud of the procedural generation code on this one. It is still the most advanced code we have ever written from scratch! I mean look at this:</p>
+			<div id="code-container" class="code-container">
+            	<pre id="code-content"></pre>
+        	</div>
+			
 		`,
 		'ridiculous-fish': `
 			<h2>Ridiculous Fish</h2>
-			<p>Details about Ridiculous Fish.</p>
+			<p>Its a game about growing an ever expanding fish tank!</p>
+			<a href="https://bigchunkygames.itch.io/ridiculous-fish" target="_blank" class="button">Play it on itch.io</a>
+			<img src="rf images/rf1.png">
+			<img src="rf images/rf2.png">
+			<img src="rf images/rf3.png">
+			<p>Overcome with nostalgia for Insane Aquarium, we became determined to remake the game with modern graphics and more lasers. We started this project in August 2019 working primarily during college classes instead of paying attention.</p>
+			<h3>[Status: Complete]</h3>
 		`,
 		about: `
 			<h2>About Big Chunky Games</h2>
 			<p>We are an indie game development studio passionate about creating unique gaming experiences. By we I mean me, Jackson, but we sounds more legit right? No its just me. I'm addicted to making games.</p>
+			<a href="https://github.com/BigChunkyGames" target="_blank" class="button">Find all the code here</a>
+			</br></br>
+			<p>It all started in 2017 when my friend <a href="https://github.com/TrebbleBiscuit" class="link" target="_blank">TrebbleBiscuit</a> and I  decided to make a text based adventure game called <a href="https://github.com/BigChunkyGames/AdventureQuest" class="link" target="_blank" >Adventure Quest</a>. Not long after that it was clear that console python wasn't exactly the most ideal development platform. So I moved on to Unity and created my first ever serious game, Adventure Dodge.</p><p>During this time I was also helped spearhead an indie game studio called <a href="https://porchlight.itch.io/" class="link" target="_blank">Porchlight Games</a> with some college buddies. The goal of Porchlight Games was for us to get a taste of what collaborative game development was like and get some hands on experience in the field. To do this, we decided to smash as many genres into a single title as possible and called it <a href="https://github.com/porchlight-games/Ruminant" class="link" target="_blank">Ruminant</a>, an experimental Tower Defense/Walking Sim/RPG hybrid. We didn't finish it of course but we got a ton of experience and <a href="https://github.com/timecomplexity" class="link" target="_blank"> Alex </a> got a hired by <a href="https://www.babaroga.com/" class="link" target="_blank">Babaroga</a>! After that we went our seperate ways but my addiction to game developement had not subsided. So I kept at it and made all those other games linked in the nav bar up there ^.
+
+			
 		`,
 		contact: `
-			<h2>Contact Us</h2>
-			<p>Get in touch with Big Chunky Games</p> 
+			<p>Get in touch 😉</p> 
 			<a href="mailto:jacksonbbush@gmail.com" class="button">Email Us</a>
 		`,
 		secrets: `
@@ -77,10 +119,13 @@ I can only work 1 project at a time sorry D:</p>
 	
 	function loadPage(pageId) {
 		content.innerHTML = pages[pageId] || 'Page not found';
-		if (['black-perpetuum', 'dot-wars', 'advance-quest', 'cannon-miner', 'ridiculous-fish'].includes(pageId)) {
+		if (['black-perpetuum', 'dot-wars', 'advance-quest', 'cannon-miner', 'ridiculous-fish', 'adventure-dodge'].includes(pageId)) {
 			subNav.classList.remove('hidden');
 			if (pageId === 'black-perpetuum') {
 				createImageCarousel();
+			}
+			if(pageId === 'cannon-miner'){
+				loadCodeSegment();
 			}
 		} else {
 			subNav.classList.add('hidden');
@@ -94,8 +139,8 @@ I can only work 1 project at a time sorry D:</p>
 				});
 			});
 		}
+		
 	}
-	
 
 	function createImageCarousel() {
 		const carouselContainer = document.getElementById('imageCarousel');
@@ -135,6 +180,16 @@ I can only work 1 project at a time sorry D:</p>
 			imageElement.src = newSrc;
 			imageElement.style.opacity = 1;
 		}, 100); // Duration of the fade transition
+	}
+
+	function loadCodeSegment() {
+		const script = document.createElement('script');
+		script.src = 'procedural_generation.js';
+		script.onload = () => {
+			const codeContent = document.getElementById('code-content');
+			codeContent.textContent = code;
+		};
+		document.head.appendChild(script);
 	}
 
 	navLinks.forEach(link => {
