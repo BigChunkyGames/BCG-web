@@ -134,12 +134,14 @@ I can only work 1 project at a time sorry D:</p>
 		if (pageId === 'secrets') {
 			const rainbowModeButton = document.getElementById('rainbowModeButton');
 			rainbowModeButton.addEventListener('click', () => {
-				const elements = document.querySelectorAll('div, body, header');
+				// Select all div, body, and header elements, excluding the cloud container
+				const elements = document.querySelectorAll('div:not(#clouds-container), body, header');
 				elements.forEach(element => {
 					element.classList.toggle('rainbow');
 				});
 			});
 		}
+		
 		
 	}
 
