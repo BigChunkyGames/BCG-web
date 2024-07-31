@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			
 			<p>Drive your unstoppable green cube through the perils of life in this colorfully musical level-based runner.</p>
 			<a href="https://porchlight.itch.io/adventure-dodge" target="_blank" class="button">Download on itch.io</a>
+			<a href="https://porchlightgames.bandcamp.com/album/adventure-dodge-ost" target="_blank" class="button">Listen to the soundtrack on Bandcamp</a>
 			</br></br>
 			<h3>Watch the trailer</h3>
 			<iframe width="420" height="315"
@@ -106,6 +107,19 @@ I can only work 1 project at a time sorry D:</p>
 			</br></br>
 			<p>It all started in 2017 when my friend <a href="https://github.com/TrebbleBiscuit" class="link" target="_blank">TrebbleBiscuit</a> and I  decided to make a text based adventure game called <a href="https://github.com/BigChunkyGames/AdventureQuest" class="link" target="_blank" >Adventure Quest</a>. Not long after that it was clear that console python wasn't exactly the most ideal development platform. So I moved on to Unity and created my first ever serious game, Adventure Dodge.</p><p>During this time I was also helped spearhead an indie game studio called <a href="https://porchlight.itch.io/" class="link" target="_blank">Porchlight Games</a> with some college buddies. The goal of Porchlight Games was for us to get a taste of what collaborative game development was like and get some hands on experience in the field. To do this, we decided to smash as many genres into a single title as possible and called it <a href="https://github.com/porchlight-games/Ruminant" class="link" target="_blank">Ruminant</a>, an experimental Tower Defense/Walking Sim/RPG hybrid. We didn't finish it of course but we got a ton of experience and <a href="https://github.com/timecomplexity" class="link" target="_blank"> Alex </a> got a hired by <a href="https://www.babaroga.com/" class="link" target="_blank">Babaroga</a>! After that we went our seperate ways but my addiction to game developement had not subsided. So I kept at it and made all those other games linked in the nav bar up there ^.
 
+			
+		`,
+		music: `
+			<h2>Music!</h2>
+			<p>I love music!</p>
+
+			<a href="https://porchlightgames.bandcamp.com/album/adventure-dodge-ost" target="_blank" class="button">Listen to the Adventure Dodge soundtrack on Bandcamp</a>
+
+			<a href="https://soundcloud.com/officialmethod" target="_blank" class="button">Check out my soundcloud!</a>
+
+			<p>Pumas&Pandas is <a href="https://soundcloud.com/snackrat84rat987" target="_blank" class="link">snack_rat</a> and my drum and bass band.
+			<a href="https://open.spotify.com/artist/5TlvSzMvecvh7OfMznHETk" target="_blank" class="button">Pumas&Pandas on Spotify</a>
+			
 			
 		`,
 		contact: `
