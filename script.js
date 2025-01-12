@@ -11,6 +11,20 @@ document.addEventListener('DOMContentLoaded', () => {
 			<p>We create fun and engaging indie games. Check out our latest releases!</p>
 			<a href="https://bigchunkygames.itch.io" target="_blank" class="button">See all our games on itch.io</a>
 		`,
+		'ace-of-space': `
+			<h2>Ace of Space</h2>
+			<a href="https://bigchunkygames.itch.io/ace-of-space" target="_blank" class="button">Play on itch.io</a>
+
+			<p>Ace of Space is a roguelike deckbuilder about growing your armada and rescuing the galaxy from the forces of chaos. </p>
+
+			<p>Select a flagship and embark on a journey across a universe on the brink of annihilation. Construct your deck of ships and science, obtain powerful artifacts to enhance your strategy, and make tough choices for the good of the galaxy. Warp across sectors, battle hostile factions, and face impossible odds as the universe itself collapses around you. </p>
+			<a href="https://store.steampowered.com/app/3242880/Ace_of_Space/" target="_blank" class="button">Wishlist on Steam</a>
+			</br></br>
+
+			<p>When the idea for Ace of Space first occurred to us, we knew instantly that we had what it would take to make it, we knew how, and most importantly, we knew that it would be a lot of fun to make all the little ships. So for almost every day from August to December of 2024 we spent time creating the game. A few 13 hour Saturdays can really go a long way. It was fast progress at first - now that its January when I'm writing this the game is in a state that I think a lot of people could enjoy. Too bad nobody knows about it yet. We're working on that. 
+			</br></br>
+			<h3>[Status: Active Development!]</h3>
+		`,
 		'adventure-dodge': `
 			<h2>Adventure Dodge</h2>
 			<p>Our first fully finished gaming experience.</p>
@@ -56,6 +70,16 @@ src="https://www.youtube.com/embed/Suc-KLHwXbc?autoplay=1&mute=1">
 </iframe>
 </br></br>
 <h3>[Status: On Hold]</h3>
+		`,
+		'guy-kingdom': `
+			<h2>Guy Kingdom</h2>
+			<p>A large scope idle game about delivering resources to your capital and growing your workforce, army, and kingdom. Defend from waves of enemies and unlock upgrades to evolve your kingdom. Play at your own pace.</p>
+			</br></br>
+			<p>This game is far from finished, but its still pretty fun to play. </p>
+			<a href="https://bigchunkygames.itch.io/guy-kingdom" target="_blank" class="button">Play on itch.io</a>
+			</br></br>
+			<h3>[Status: On Hold]</h3>
+			<p>July 2024</p>
 		`,
 		'advance-quest': `
 			<h2>Advance Quest</h2>

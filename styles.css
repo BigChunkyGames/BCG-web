@@ -1,17 +1,30 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
-    color: #ffde44;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
 }
+
 html {
 	scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Fredoka', Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffde44;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .container {
+    flex: 1;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-left: 40px 0;
+    margin-right: 40px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 header {
 	background-color: #ffde44;
@@ -39,6 +52,12 @@ nav a {
     margin: 0 15px;
     font-weight: bold;
     font-size: 1.2em;
+    transition: all 0.2s ease;
+}
+nav a:hover {
+    font-weight: 900;
+    transform: scale(1.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 #content {
     background-color: #333;
@@ -109,10 +128,13 @@ img {
     cursor: pointer;
     font-weight: bold;
     border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
 .carousel-container button:hover {
     background-color: #e6e600;
+    transform: scale(1.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .button {
@@ -124,11 +146,13 @@ img {
 	font-weight: bold;
 	border-radius: 5px;
 	margin-top: 10px;
-	transition: background-color 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 .button:hover {
     background-color: #e6e600;
+    transform: scale(1.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .cloud-overlay {
@@ -231,6 +255,13 @@ img {
     margin: 10px 10px;
     font-weight: bold;
     font-size: 1em;
+    transition: all 0.2s ease;
+}
+
+#sub-nav a:hover {
+    font-weight: 900;
+    transform: scale(1.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 600px) {
